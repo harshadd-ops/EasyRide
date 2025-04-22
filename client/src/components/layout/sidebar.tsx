@@ -27,7 +27,7 @@ export function Sidebar() {
     const active = isActive(href);
     return (
       <Link href={href}>
-        <a className={`flex items-center px-4 py-3 rounded-lg font-medium ${
+        <div className={`flex items-center px-4 py-3 rounded-lg font-medium cursor-pointer ${
           active 
             ? "text-primary bg-indigo-50" 
             : "text-dark-700 hover:bg-gray-100"
@@ -39,7 +39,7 @@ export function Sidebar() {
               {count}
             </span>
           )}
-        </a>
+        </div>
       </Link>
     );
   };

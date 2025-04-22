@@ -18,10 +18,10 @@ export function MobileNav() {
     const active = isActive(href);
     return (
       <Link href={href}>
-        <a className={`flex flex-col items-center p-3 ${active ? "text-primary" : "text-dark-700"}`}>
+        <div className={`flex flex-col items-center p-3 cursor-pointer ${active ? "text-primary" : "text-dark-700"}`}>
           {icon}
           <span className="text-xs mt-1">{label}</span>
-        </a>
+        </div>
       </Link>
     );
   };

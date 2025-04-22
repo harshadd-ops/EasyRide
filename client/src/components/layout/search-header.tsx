@@ -107,12 +107,12 @@ export function SearchHeader() {
             </SheetContent>
           </Sheet>
           <Link href="/">
-            <a className="flex items-center ml-2">
+            <div className="flex items-center ml-2 cursor-pointer">
               <div className="h-9 w-9 bg-primary rounded-lg flex items-center justify-center">
                 <Navigation className="h-5 w-5 text-white" />
               </div>
               <h1 className="ml-2 text-lg font-bold text-dark-900">EasyRide</h1>
-            </a>
+            </div>
           </Link>
         </div>
         
@@ -133,12 +133,12 @@ export function SearchHeader() {
             <span className="absolute top-1 right-1 h-2 w-2 bg-primary rounded-full"></span>
           </button>
           <Link href="/profile">
-            <a className="hidden md:block ml-4">
+            <div className="hidden md:block ml-4 cursor-pointer">
               <Avatar className="h-9 w-9 border-2 border-white">
                 <AvatarImage src={user.profileImage || ""} />
                 <AvatarFallback>{getInitials(user.fullName)}</AvatarFallback>
               </Avatar>
-            </a>
+            </div>
           </Link>
         </div>
       </div>
