@@ -88,10 +88,10 @@ export default function MyRidesPage() {
               <p className="text-gray-600">Manage your ride offers and requests</p>
             </div>
             <Link href="/post-ride">
-              <a className={buttonVariants({ className: "hidden md:flex items-center gap-2" })}>
+              <div className={buttonVariants({ className: "hidden md:flex items-center gap-2 cursor-pointer" })}>
                 <PlusCircle className="h-4 w-4" />
                 Post a Ride
-              </a>
+              </div>
             </Link>
           </div>
           
@@ -391,7 +391,7 @@ function RequestedRideCard({ request }: { request: RideRequest }) {
               <div className="mr-3 text-sm text-gray-600">Driver:</div>
               {request.ride.user ? (
                 <Link href={`/profile/${request.ride.user.id}`}>
-                  <a className="flex items-center">
+                  <div className="flex items-center cursor-pointer">
                     <Avatar className="h-8 w-8">
                       <AvatarImage src={request.ride.user.profileImage || ""} />
                       <AvatarFallback>{getInitials(request.ride.user.fullName)}</AvatarFallback>
@@ -405,7 +405,7 @@ function RequestedRideCard({ request }: { request: RideRequest }) {
                         <span className="text-xs text-gray-500 ml-1">{request.ride.user.avgRating.toFixed(1)}</span>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 </Link>
               ) : (
                 <div className="flex items-center">
@@ -420,9 +420,9 @@ function RequestedRideCard({ request }: { request: RideRequest }) {
             </div>
             
             <Link href={`/messages/${request.ride.userId}`}>
-              <a className={buttonVariants({ variant: "outline", size: "sm" })}>
+              <div className={buttonVariants({ variant: "outline", size: "sm", className: "cursor-pointer" })}>
                 Message Driver
-              </a>
+              </div>
             </Link>
           </div>
         </div>
