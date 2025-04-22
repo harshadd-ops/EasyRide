@@ -123,7 +123,7 @@ export default function HomePage() {
       <div className="flex-1 md:ml-64 pb-16 md:pb-0">
         <SearchHeader />
         
-        <main className="max-w-7xl mx-auto px-4 py-6">
+        <main className="container mx-auto px-4 py-6">
           <HomeBanner />
           
           <RideFilters onFilterChange={handleFilterChange} />

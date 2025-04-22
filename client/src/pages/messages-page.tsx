@@ -90,7 +90,7 @@ export default function MessagesPage() {
       <div className="flex-1 md:ml-64 pb-16 md:pb-0">
         <SearchHeader />
         
-        <main className="max-w-7xl mx-auto px-4 py-6">
+        <main className="container mx-auto px-4 py-6">
           <div className="mb-6">
             <h1 className="text-2xl font-bold text-dark-900">Messages</h1>
             <p className="text-gray-600">Chat with your ride companions</p>
