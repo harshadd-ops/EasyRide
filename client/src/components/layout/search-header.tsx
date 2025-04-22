@@ -57,10 +57,8 @@ export function SearchHeader() {
             <SheetContent side="left" className="w-[240px] sm:w-[300px]">
               <SheetHeader className="pb-5">
                 <SheetTitle className="flex items-center">
-                  <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" className="h-5 w-5 text-white" fill="currentColor">
-                      <path d="M19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.11 21 21 20.1 21 19V5C21 3.9 20.11 3 19 3M7.5 18C6.12 18 5 16.88 5 15.5C5 14.12 6.12 13 7.5 13C8.88 13 10 14.12 10 15.5C10 16.88 8.88 18 7.5 18M16.5 18C15.12 18 14 16.88 14 15.5C14 14.12 15.12 13 16.5 13C17.88 13 19 14.12 19 15.5C19 16.88 17.88 18 16.5 18M17 8H7C5.9 8 5 7.1 5 6C5 4.9 5.9 4 7 4H17C18.1 4 19 4.9 19 6C19 7.1 18.1 8 17 8Z"/>
-                    </svg>
+                  <div className="h-8 w-8 overflow-hidden rounded-lg">
+                    <img src="/attached_assets/ChatGPT Image Apr 22, 2025, 07_58_53 PM.png" alt="EasyRide Logo" className="w-full h-full object-cover" />
                   </div>
                   <span className="ml-2 text-lg font-bold">EasyRide</span>
                 </SheetTitle>
@@ -110,10 +108,8 @@ export function SearchHeader() {
           </Sheet>
           <Link href="/">
             <div className="flex items-center ml-2 cursor-pointer">
-              <div className="h-9 w-9 bg-primary rounded-lg flex items-center justify-center">
-                <svg viewBox="0 0 24 24" className="h-5 w-5 text-white" fill="currentColor">
-                      <path d="M19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.11 21 21 20.1 21 19V5C21 3.9 20.11 3 19 3M7.5 18C6.12 18 5 16.88 5 15.5C5 14.12 6.12 13 7.5 13C8.88 13 10 14.12 10 15.5C10 16.88 8.88 18 7.5 18M16.5 18C15.12 18 14 16.88 14 15.5C14 14.12 15.12 13 16.5 13C17.88 13 19 14.12 19 15.5C19 16.88 17.88 18 16.5 18M17 8H7C5.9 8 5 7.1 5 6C5 4.9 5.9 4 7 4H17C18.1 4 19 4.9 19 6C19 7.1 18.1 8 17 8Z"/>
-                </svg>
+              <div className="h-9 w-9 overflow-hidden rounded-lg">
+                <img src="/attached_assets/ChatGPT Image Apr 22, 2025, 07_58_53 PM.png" alt="EasyRide Logo" className="w-full h-full object-cover" />
               </div>
               <h1 className="ml-2 text-lg font-bold text-dark-900">EasyRide</h1>
             </div>

@@ -85,10 +85,8 @@ export default function AuthPage() {
       <div className="md:w-1/2 flex flex-col justify-center items-center p-8">
         <div className="max-w-md w-full">
           <div className="flex items-center mb-8">
-            <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center">
-              <svg viewBox="0 0 24 24" className="h-6 w-6 text-white" fill="currentColor">
-                <path d="M19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.11 21 21 20.1 21 19V5C21 3.9 20.11 3 19 3M7.5 18C6.12 18 5 16.88 5 15.5C5 14.12 6.12 13 7.5 13C8.88 13 10 14.12 10 15.5C10 16.88 8.88 18 7.5 18M16.5 18C15.12 18 14 16.88 14 15.5C14 14.12 15.12 13 16.5 13C17.88 13 19 14.12 19 15.5C19 16.88 17.88 18 16.5 18M17 8H7C5.9 8 5 7.1 5 6C5 4.9 5.9 4 7 4H17C18.1 4 19 4.9 19 6C19 7.1 18.1 8 17 8Z"/>
-              </svg>
+            <div className="h-10 w-10 overflow-hidden rounded-lg">
+              <img src="/attached_assets/ChatGPT Image Apr 22, 2025, 07_58_53 PM.png" alt="EasyRide Logo" className="w-full h-full object-cover" />
             </div>
             <h1 className="ml-3 text-xl font-bold text-dark-900">EasyRide</h1>
           </div>
