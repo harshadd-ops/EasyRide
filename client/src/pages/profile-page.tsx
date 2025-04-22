@@ -288,8 +288,8 @@ function ProfileCard({
           
           <div className="flex items-center justify-center mt-1 mb-4">
             <Star className="h-4 w-4 text-yellow-400 fill-yellow-400 mr-1" />
-            <span className="text-gray-700">{user.avgRating.toFixed(1)}</span>
-            <span className="text-gray-500 text-sm ml-1">({user.totalReviews} reviews)</span>
+            <span className="text-gray-700">{user.avgRating?.toFixed(1) || "0.0"}</span>
+            <span className="text-gray-500 text-sm ml-1">({user.totalReviews || 0} reviews)</span>
           </div>
           
           <div className="w-full space-y-3 mt-2">
