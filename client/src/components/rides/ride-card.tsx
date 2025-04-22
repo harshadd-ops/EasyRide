@@ -141,7 +141,7 @@ export function RideCard({ ride }: { ride: RideProps }) {
         <div className="flex justify-between items-center border-t border-gray-100 pt-4">
           {ride.user ? (
             <Link href={`/profile/${ride.user.id}`}>
-              <a className="flex items-center">
+              <div className="flex items-center cursor-pointer">
                 <Avatar className="h-8 w-8">
                   <AvatarImage src={ride.user.profileImage || ""} />
                   <AvatarFallback>{getInitials(ride.user.fullName)}</AvatarFallback>
@@ -155,7 +155,7 @@ export function RideCard({ ride }: { ride: RideProps }) {
                     <span className="text-xs text-gray-500 ml-1">{ride.user.avgRating.toFixed(1)}</span>
                   </div>
                 </div>
-              </a>
+              </div>
             </Link>
           ) : (
             <div className="flex items-center">

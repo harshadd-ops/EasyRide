@@ -9,9 +9,9 @@ export function HomeBanner() {
           <p className="text-indigo-100 mb-4">Connect with fellow students heading your way. Save money and make friends!</p>
           <div className="flex flex-wrap gap-3">
             <Link href="/post-ride">
-              <a className="bg-white text-primary font-medium px-5 py-2 rounded-lg hover:bg-indigo-50 transition inline-block">
+              <div className="bg-white text-primary font-medium px-5 py-2 rounded-lg hover:bg-indigo-50 transition inline-block cursor-pointer">
                 Post a Ride
-              </a>
+              </div>
             </Link>
             <button className="bg-indigo-400 bg-opacity-30 text-white font-medium px-5 py-2 rounded-lg hover:bg-opacity-40 transition">
               Find a Ride
