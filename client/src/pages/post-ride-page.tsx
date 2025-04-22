@@ -108,7 +108,7 @@ export default function PostRidePage() {
       <div className="flex-1 md:ml-64 pb-16 md:pb-0">
         <SearchHeader />
         
-        <main className="container mx-auto px-4 py-6">
+        <main className="max-w-7xl mx-auto px-4 py-6">
           <div className="max-w-3xl mx-auto">
             <div className="mb-6">
               <h1 className="text-2xl font-bold text-dark-900">Post a Ride</h1>

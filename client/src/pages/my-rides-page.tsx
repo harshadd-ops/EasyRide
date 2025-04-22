@@ -483,7 +483,7 @@ function RideRequestCard({
         <div className="flex items-center">
           {request.user ? (
             <Link href={`/profile/${request.user.id}`}>
-              <a className="flex items-center">
+              <div className="flex items-center cursor-pointer">
                 <Avatar className="h-8 w-8">
                   <AvatarImage src={request.user.profileImage || ""} />
                   <AvatarFallback>{getInitials(request.user.fullName)}</AvatarFallback>
@@ -497,7 +497,7 @@ function RideRequestCard({
                     <span className="text-xs text-gray-500 ml-1">{request.user.avgRating.toFixed(1)}</span>
                   </div>
                 </div>
-              </a>
+              </div>
             </Link>
           ) : (
             <div className="flex items-center">
@@ -551,9 +551,9 @@ function RideRequestCard({
       {(request.status === 'accepted' || request.status === 'rejected') && (
         <div className="mt-3 text-right">
           <Link href={`/messages/${request.userId}`}>
-            <a className={buttonVariants({ variant: "outline", size: "sm" })}>
+            <div className={buttonVariants({ variant: "outline", size: "sm", className: "cursor-pointer" })}>
               Message Rider
-            </a>
+            </div>
           </Link>
         </div>
       )}
@@ -583,9 +583,9 @@ function EmptyState({
         </div>
         <p className="text-gray-500 mb-6">{description}</p>
         <Link href={buttonHref}>
-          <a className={buttonVariants({ size: "lg" })}>
+          <div className={buttonVariants({ size: "lg", className: "cursor-pointer" })}>
             {buttonText}
-          </a>
+          </div>
         </Link>
       </CardContent>
     </Card>
