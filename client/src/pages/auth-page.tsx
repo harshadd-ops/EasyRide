@@ -86,7 +86,7 @@ export default function AuthPage() {
         <div className="max-w-md w-full">
           <div className="flex items-center mb-8">
             <div className="h-10 w-10 overflow-hidden rounded-lg">
-              <img src="/attached_assets/ChatGPT Image Apr 22, 2025, 07_58_53 PM.png" alt="EasyRide Logo" className="w-full h-full object-cover" />
+              <img src="/logo.png" alt="EasyRide Logo" className="w-full h-full object-cover" />
             </div>
             <h1 className="ml-3 text-xl font-bold text-dark-900">EasyRide</h1>
           </div>
