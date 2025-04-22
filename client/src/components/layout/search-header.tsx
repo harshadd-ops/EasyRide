@@ -58,7 +58,10 @@ export function SearchHeader() {
               <SheetHeader className="pb-5">
                 <SheetTitle className="flex items-center">
                   <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-                    <Navigation className="h-5 w-5 text-white" />
+                    <svg viewBox="0 0 24 24" className="h-5 w-5 text-white" fill="currentColor">
+                      <path d="M12 3C7.5 3 4 5.5 4 9.5V15c0 .5.5 1 1 1h1v-1.5c0-2.5 2.5-4.5 6-4.5s6 2 6 4.5V16h1c.5 0 1-.5 1-1V9.5C20 5.5 16.5 3 12 3zm-3 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                      <path d="M15 16v1c0 1.7-1.3 3-3 3s-3-1.3-3-3v-1h6m-3-2c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"/>
+                    </svg>
                   </div>
                   <span className="ml-2 text-lg font-bold">EasyRide</span>
                 </SheetTitle>
@@ -109,13 +112,16 @@ export function SearchHeader() {
           <Link href="/">
             <div className="flex items-center ml-2 cursor-pointer">
               <div className="h-9 w-9 bg-primary rounded-lg flex items-center justify-center">
-                <Navigation className="h-5 w-5 text-white" />
+                <svg viewBox="0 0 24 24" className="h-5 w-5 text-white" fill="currentColor">
+                      <path d="M12 3C7.5 3 4 5.5 4 9.5V15c0 .5.5 1 1 1h1v-1.5c0-2.5 2.5-4.5 6-4.5s6 2 6 4.5V16h1c.5 0 1-.5 1-1V9.5C20 5.5 16.5 3 12 3zm-3 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                      <path d="M15 16v1c0 1.7-1.3 3-3 3s-3-1.3-3-3v-1h6m-3-2c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"/>
+                    </svg>
               </div>
               <h1 className="ml-2 text-lg font-bold text-dark-900">EasyRide</h1>
             </div>
           </Link>
         </div>
-        
+
         <form onSubmit={handleSearch} className="relative flex-1 max-w-2xl mx-4">
           <input 
             type="text" 
@@ -126,7 +132,7 @@ export function SearchHeader() {
           />
           <Search className="h-5 w-5 text-gray-400 absolute left-3 top-2.5" />
         </form>
-        
+
         <div className="flex items-center">
           <button className="relative p-2 text-gray-600 hover:text-primary">
             <Bell className="h-6 w-6" />
