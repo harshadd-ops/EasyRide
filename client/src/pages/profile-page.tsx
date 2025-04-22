@@ -149,7 +149,7 @@ export default function ProfilePage() {
       <div className="flex-1 md:ml-64 pb-16 md:pb-0">
         <SearchHeader />
         
-        <main className="container mx-auto px-4 py-6">
+        <main className="max-w-7xl mx-auto px-4 py-6">
           <div className="mb-6">
             <h1 className="text-2xl font-bold text-dark-900">
               {isOwnProfile ? "My Profile" : `${profileUser?.fullName || "User"}'s Profile`}
@@ -325,10 +325,10 @@ function ProfileCard({
           {!isOwnProfile && (
             <div className="mt-6 w-full">
               <Link href={`/messages/${user.id}`}>
-                <a className={buttonVariants({ className: "w-full" })}>
+                <div className={buttonVariants({ className: "w-full cursor-pointer" })}>
                   <MessageSquare className="h-4 w-4 mr-2" />
                   Message
-                </a>
+                </div>
               </Link>
             </div>
           )}
@@ -554,7 +554,7 @@ function UserReviews({
               <div className="flex items-center">
                 {review.reviewer ? (
                   <Link href={`/profile/${review.reviewer.id}`}>
-                    <a className="flex items-center">
+                    <div className="flex items-center cursor-pointer">
                       <Avatar className="h-10 w-10">
                         <AvatarImage src={review.reviewer.profileImage || ""} />
                         <AvatarFallback>{getInitials(review.reviewer.fullName)}</AvatarFallback>
@@ -563,7 +563,7 @@ function UserReviews({
                         <p className="font-medium">{review.reviewer.fullName}</p>
                         <p className="text-xs text-gray-500">{formatDate(review.createdAt)}</p>
                       </div>
-                    </a>
+                    </div>
                   </Link>
                 ) : (
                   <div className="flex items-center">
@@ -661,9 +661,9 @@ function UserRides({
           You haven't posted any rides yet.
         </p>
         <Link href="/post-ride">
-          <a className={buttonVariants({ variant: "default" })}>
+          <div className={buttonVariants({ variant: "default", className: "cursor-pointer" })}>
             Post Your First Ride
-          </a>
+          </div>
         </Link>
       </div>
     );
@@ -674,10 +674,10 @@ function UserRides({
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-medium">Your Posted Rides</h3>
         <Link href="/post-ride">
-          <a className={buttonVariants({ variant: "outline", size: "sm" })}>
-            <PlusCircle className="h-4 w-4 mr-2" />
+          <div className={buttonVariants({ variant: "outline", size: "sm", className: "cursor-pointer" })}>
+            <Plus className="h-4 w-4 mr-2" />
             Post New Ride
-          </a>
+          </div>
         </Link>
       </div>
       
@@ -719,9 +719,9 @@ function UserRides({
                   {ride.status.charAt(0).toUpperCase() + ride.status.slice(1)}
                 </div>
                 <Link href="/my-rides">
-                  <a className={buttonVariants({ variant: "outline", size: "sm" })}>
+                  <div className={buttonVariants({ variant: "outline", size: "sm", className: "cursor-pointer" })}>
                     View Details
-                  </a>
+                  </div>
                 </Link>
               </div>
             </div>
