@@ -58,7 +58,7 @@ export function SearchHeader() {
               <SheetHeader className="pb-5">
                 <SheetTitle className="flex items-center">
                   <div className="h-8 w-8 overflow-hidden rounded-lg">
-                    <img src="/logo.png" alt="EasyRide Logo" className="w-full h-full object-cover" />
+                    <img src="/attached_assets/ChatGPT Image Apr 22, 2025, 07_58_53 PM.png" alt="EasyRide Logo" className="w-full h-full object-cover" />
                   </div>
                   <span className="ml-2 text-lg font-bold">EasyRide</span>
                 </SheetTitle>
@@ -109,7 +109,7 @@ export function SearchHeader() {
           <Link href="/">
             <div className="flex items-center ml-2 cursor-pointer">
               <div className="h-9 w-9 overflow-hidden rounded-lg">
-                <img src="/logo.png" alt="EasyRide Logo" className="w-full h-full object-cover" />
+                <img src="/attached_assets/ChatGPT Image Apr 22, 2025, 07_58_53 PM.png" alt="EasyRide Logo" className="w-full h-full object-cover" />
               </div>
               <h1 className="ml-2 text-lg font-bold text-dark-900">EasyRide</h1>
             </div>

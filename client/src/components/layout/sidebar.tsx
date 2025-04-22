@@ -55,7 +55,7 @@ export function Sidebar() {
     <div className="hidden md:flex md:w-64 md-sidebar-fixed flex-col bg-white border-r border-gray-200 p-5 h-screen">
       <div className="flex items-center mb-8">
         <div className="h-10 w-10 overflow-hidden rounded-lg">
-          <img src="/logo.png" alt="EasyRide Logo" className="w-full h-full object-cover" />
+          <img src="/attached_assets/ChatGPT Image Apr 22, 2025, 07_58_53 PM.png" alt="EasyRide Logo" className="w-full h-full object-cover" />
         </div>
         <h1 className="ml-3 text-xl font-bold text-dark-900">EasyRide</h1>
       </div>
